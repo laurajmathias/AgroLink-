@@ -45,7 +45,7 @@ body{
 }
 
 .logo img{
-  width: 250px;
+  width: 150px;
 }
 
 
@@ -56,7 +56,7 @@ body{
 
 .navbar a{
   text-decoration: none;
-  color: #6A9F29;
+  color: #3a6802;
   font-weight: 600;
   transition: .3s;
 }
@@ -78,6 +78,7 @@ body{
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+  background-color: #3a6802;
 }
 
 .btn-primary{
