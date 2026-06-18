@@ -45,7 +45,7 @@ body{
 }
 
 .logo img{
-  width: 150px;
+  width: 90px;
 }
 
 
@@ -345,7 +345,7 @@ section{
 
   border-radius: 20px;
 
-  background: rgba(201,76,255,.12);
+  background: rgba(18, 88, 36, 0.12);
 
   display: flex;
 
@@ -357,7 +357,7 @@ section{
 
 .card-icon i{
   font-size: 30px;
-  color: #c94cff;
+  color: #0c5829;
 }
 
 .service-card h3{
@@ -401,7 +401,7 @@ section{
 .team-card:hover{
   transform: translateY(-10px);
 
-  border-color: rgba(201,76,255,.25);
+  border-color: rgba(73, 141, 27, 0.25);
 }
 
 .team-image{
@@ -460,9 +460,9 @@ section{
 .project-tag{
   display: inline-block;
 
-  background: rgba(201,76,255,.12);
+  background: rgba(16, 116, 24, 0.12);
 
-  color: #d9a3ff;
+  color: #58a03b;
 
   padding: 10px 18px;
 
@@ -510,7 +510,7 @@ section{
 
   animation: floating 4s infinite ease-in-out;
 
-  filter: drop-shadow(0 25px 40px rgba(123,44,255,.25));
+  filter: drop-shadow(0 25px 40px rgba(29, 182, 67, 0.25));
 }
 
 .contact{
@@ -553,7 +553,7 @@ section{
 
   border-radius: 18px;
 
-  border: 1px solid rgba(201,76,255,.15);
+  border: 1px solid rgba(15, 65, 10, 0.15);
 
   background: rgba(255,255,255,.04);
 
@@ -620,7 +620,7 @@ section{
 }
 
 .footer-links a:hover{
-  color: #c94cff;
+  color: #406d3e;
 }
 
 .footer-social{
@@ -636,7 +636,7 @@ section{
 
   background: rgba(255,255,255,.08);
 
-  color: #c94cff;
+  color: #2f7a2d;
 
   display: flex;
 
