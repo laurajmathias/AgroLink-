@@ -56,13 +56,13 @@ body{
 
 .navbar a{
   text-decoration: none;
-  color: #b58cff;
+  color: #6A9F29;
   font-weight: 600;
   transition: .3s;
 }
 
 .navbar a:hover{
-  color: #d9b8ff;
+  color: #C8DBB0;
 }
 
 
@@ -83,14 +83,14 @@ body{
 .btn-primary{
   background: linear-gradient(
     135deg,
-    #7b2cff,
-    #c94cff
+    #287e17,
+    #70ac65
   );
 
   color: white;
   border: none;
 
-  box-shadow: 0 15px 35px rgba(123,44,255,.35);
+  box-shadow: 0 15px 35px rgba(32, 124, 22, 0.548);
 }
 
 .btn-primary:hover{
@@ -98,13 +98,13 @@ body{
 }
 
 .btn-outline{
-  border: 2px solid #a855f7;
-  color: #c084fc;
+  border: 2px solid #287e17;
+  color: #57a149;
   background: transparent;
 }
 
 .btn-outline:hover{
-  background: #a855f7;
+  background: #287e17;
   color: white;
 }
 
@@ -255,7 +255,7 @@ body{
 }
 
 .slider-buttons button:hover{
-  background: #c94cff;
+  background: #287e17;
 
   color: white;
 
@@ -292,7 +292,7 @@ body{
 }
 
 .active-dot{
-  background: #c94cff;
+  background: #287e17;
   transform: scale(1.2);
 }
 
