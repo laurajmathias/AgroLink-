@@ -94,111 +94,100 @@ slider.addEventListener("touchmove",(e)=>{
     startTouch = move;
 
 
-});
+});const slider = document.querySelector(".team-grid");
 
-
-// HERO
-
-const slides = document.querySelectorAll(".slide");
-
-let current = 0;
-
-
-function changeSlide(){
-
-slides.forEach(slide=>{
-slide.classList.remove("active");
-});
-
-
-slides[current].classList.add("active");
-
-}
-
-
-
-setInterval(()=>{
-
-
-current++;
-
-
-if(current >= slides.length){
-
-current = 0;
-
-}
-
-
-changeSlide();
-
-
-},5000);
-
-
-
-
-
-
-// EQUIPE ARRASTAR
-
-
-const team = document.querySelector(".team-grid");
-
-
-let down = false;
-
+let isDown = false;
 let startX;
-
-let scroll;
-
+let scrollLeft;
 
 
-team.addEventListener("mousedown",(e)=>{
 
-down = true;
+// quando clicar no mouse
+slider.addEventListener("mousedown", (e) => {
 
-startX = e.pageX - team.offsetLeft;
+    isDown = true;
 
-scroll = team.scrollLeft;
+    slider.classList.add("active");
+
+    startX = e.pageX - slider.offsetLeft;
+
+    scrollLeft = slider.scrollLeft;
+
+});
+
+
+
+// soltar mouse
+slider.addEventListener("mouseup", () => {
+
+    isDown = false;
+
+    slider.classList.remove("active");
+
+});
+
+
+
+// sair da área
+slider.addEventListener("mouseleave", () => {
+
+    isDown = false;
+
+});
+
+
+
+// mover arrastando
+slider.addEventListener("mousemove", (e) => {
+
+
+    if(!isDown) return;
+
+
+    e.preventDefault();
+
+
+    const x = e.pageX - slider.offsetLeft;
+
+
+    const walk = (x - startX) * 2;
+
+
+
+    slider.scrollLeft = scrollLeft - walk;
 
 
 });
 
 
 
-team.addEventListener("mouseup",()=>{
 
-down=false;
+// suporte para celular (touch)
+
+let startTouch;
+
+slider.addEventListener("touchstart", (e)=>{
+
+    startTouch = e.touches[0].clientX;
+
 
 });
 
 
 
-team.addEventListener("mouseleave",()=>{
-
-down=false;
-
-});
+slider.addEventListener("touchmove",(e)=>{
 
 
-
-team.addEventListener("mousemove",(e)=>{
-
-
-if(!down) return;
+    const move = e.touches[0].clientX;
 
 
-e.preventDefault();
+    const difference = startTouch - move;
 
 
-const x = e.pageX - team.offsetLeft;
+    slider.scrollLeft += difference;
 
 
-const move = (x-startX)*2;
-
-
-team.scrollLeft = scroll - move;
+    startTouch = move;
 
 
 });
