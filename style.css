@@ -254,6 +254,8 @@ body{
 
     background-position:center;
 
+    padding-top:90px;
+
 }
 
 .hero::before{
@@ -266,8 +268,9 @@ body{
 
     background:rgba(0,60,25,0.55);
 
-}
+    z-index:1;
 
+}   
 
 
 
@@ -325,15 +328,15 @@ body{
 }
 
 
-
 .hero p{
-
 
     font-size:19px;
 
     line-height:1.8;
 
-    color:var(--text-light);
+    color:white;
+
+    opacity:.9;
 
     margin-bottom:35px;
 
