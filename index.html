@@ -75,11 +75,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         <a href="#services" class="btn-primary">
           Saiba Mais 
         </a>
+
       </div>
     </div>
   
-  </section>
-
+</section>
   <section class="team" id="team">
 
     <div class="container">
@@ -295,68 +295,6 @@ Enviar mensagem
       © 2026 AgroLink — Todos os direitos reservados
     </p>
    </footer>
-
-   <script>
-        const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
-
-    const next = document.getElementById("next");
-    const prev = document.getElementById("prev");
-
-    let current = 0;
-
-    function updateSlider(index){
-
-      slides.forEach(slide => {
-        slide.classList.remove("active");
-      });
-
-      dots.forEach(dot => {
-        dot.classList.remove("active-dot");
-      });
-
-      slides[index].classList.add("active");
-      dots[index].classList.add("active-dot");
-
-    }
-
-    next.addEventListener("click", () => {
-
-      current++;
-
-      if(current >= slides.length){
-        current = 0;
-      }
-
-      updateSlider(current);
-
-    });
-
-    prev.addEventListener("click", () => {
-
-      current--;
-
-      if(current < 0){
-        current = slides.length - 1;
-      }
-
-      updateSlider(current);
-
-    });
-
-    dots.forEach((dot, index) => {
-
-      dot.addEventListener("click", () => {
-
-        current = index;
-
-        updateSlider(current);
-
-      });
-
-    });
-
-   </script>
 
    <script src="script.js"></script>
 
